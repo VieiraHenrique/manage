@@ -1,0 +1,47 @@
+.testimonials {
+	margin-bottom: 5rem;
+	text-align: center;
+
+	h2 {
+		text-align: center;
+		font-weight: 800;
+		font-size: 3.2rem;
+		line-height: 4.5rem;
+		letter-spacing: -0.6;
+		margin-bottom: 10rem;
+	}
+
+	.carousel {
+		.wrapper {
+			@media screen and (min-width: 768px) {
+				display: grid;
+				gap: 1rem;
+				grid-template-columns: 1fr 1fr;
+			}
+		}
+
+		&__item {
+			background: #fafafa;
+			text-align: center;
+			padding: 0 2.5rem 5rem;
+			margin-bottom: 2.5rem;
+			img {
+				width: 7.2rem;
+				transform: translateY(-3.5rem);
+			}
+
+			h4 {
+				font-size: 1.6rem;
+				font-weight: bold;
+				letter-spacing: -0.3;
+				margin-bottom: 3rem;
+			}
+
+			p {
+				font-size: 1.4rem;
+				color: $blue;
+				opacity: 0.5;
+			}
+		}
+	}
+}

@@ -1,0 +1,83 @@
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background: rgba($color: #242d52, $alpha: 0.2);
+	width: 100vw;
+	height: 100vh;
+	display: none;
+}
+
+.header {
+	position: relative;
+	z-index: 1000;
+
+	height: 9rem;
+
+	.wrapper {
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		img {
+			width: 11rem;
+			transform: translateY(3px);
+		}
+	}
+
+	.nav {
+		i {
+			color: $blue;
+			font-size: 2.5rem;
+
+			@media screen and (min-width: 768px) {
+				display: none;
+			}
+		}
+
+		ul {
+			position: fixed;
+			background: $white;
+			width: 325px;
+			top: 103px;
+			left: 25px;
+			display: none;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			padding: 5rem 0;
+			gap: 3.5rem;
+			border-radius: 0.5rem;
+
+			@media screen and (min-width: 768px) {
+				all: unset;
+				list-style: none;
+				display: flex;
+				gap: 2rem;
+			}
+
+			a {
+				font-weight: bold;
+				line-height: 23px;
+				text-align: center;
+				letter-spacing: -0.3;
+				color: $blue;
+			}
+		}
+	}
+	.btn {
+		display: none;
+
+		@media screen and (min-width: 768px) {
+			display: inline-block;
+		}
+	}
+}
+
+.show {
+	display: flex !important;
+}

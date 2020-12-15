@@ -1,0 +1,97 @@
+.about {
+	.wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+
+		@media screen and (min-width: 768px) {
+			grid-template-columns: 1fr 1fr;
+			gap: 2rem;
+			text-align: left;
+		}
+	}
+
+	&__header {
+		text-align: center;
+
+		@media screen and (min-width: 768px) {
+			margin-left: -2rem;
+			padding-left: 2rem;
+			text-align: left;
+			background: url(/img/bg-tablet-pattern.svg);
+			background-size: 630px;
+			background-repeat: no-repeat;
+			background-position: left -400px bottom -100px;
+		}
+
+		@media screen and (min-width: 1025px) {
+			margin-left: -20rem;
+			padding-left: 20rem;
+			background-size: 800px;
+			background-position: left -430px bottom -50px;
+			margin-bottom: -400px;
+		}
+		@media screen and (min-width: 1441px) {
+			margin-left: -45rem;
+			padding-left: 45rem;
+			background-size: 1000px;
+			background-position: left -330px bottom 100px;
+			margin-bottom: -700px;
+		}
+
+		h2 {
+			font-size: 3rem;
+			font-weight: 800;
+			max-width: 90%;
+			margin: 0 auto 1rem;
+
+			@media screen and (min-width: 768px) {
+				margin: 0 0 1rem;
+			}
+		}
+
+		p {
+			font-weight: 300;
+			line-height: 28px;
+			color: $blue;
+			opacity: 0.5;
+			margin-bottom: 3rem;
+		}
+	}
+
+	&__topic {
+		margin-bottom: 5rem;
+	}
+
+	&__topics {
+		.title {
+			margin-right: -2rem;
+			background: $pink;
+			border-top-left-radius: 5rem;
+			border-bottom-left-radius: 5rem;
+			display: flex;
+			gap: 2rem;
+			align-items: center;
+			margin-bottom: 2rem;
+
+			span {
+				display: inline-block;
+				background: $red;
+				color: $white;
+				padding: 1rem 2.5rem;
+				border-radius: 5rem;
+			}
+			h3 {
+				letter-spacing: -0.3;
+				font-weight: bold;
+				font-size: 1.6rem;
+			}
+		}
+
+		.text {
+			color: $blue;
+			opacity: 0.5;
+			font-size: 1.4rem;
+			line-height: 28px;
+		}
+	}
+}
