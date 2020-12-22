@@ -44,7 +44,8 @@
 			background: $white;
 			width: 325px;
 			top: 103px;
-			left: 25px;
+			left: 50%;
+			transform: translateX(-50%);
 			display: none;
 			justify-content: center;
 			align-items: center;
@@ -66,6 +67,10 @@
 				text-align: center;
 				letter-spacing: -0.3;
 				color: $blue;
+
+				&:hover {
+					border-bottom: 2px solid $blue;
+				}
 			}
 		}
 	}

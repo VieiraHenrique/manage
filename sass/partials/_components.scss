@@ -5,6 +5,10 @@
 	padding: 1rem 2.5rem;
 	border-radius: 10rem;
 	box-shadow: 0 2px 5px $red;
+
+	&:hover {
+		opacity: 0.9;
+	}
 }
 
 .btn-white {
